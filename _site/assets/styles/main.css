@@ -5403,9 +5403,11 @@ a.credit {
   padding-bottom: 19px;
 }
 
+
 .row .cell:nth-child(1) {
+  width: 1200px;
   /* width: 360px; */
-  /* padding-left: 40px; */
+  padding-left: 40px;
 }
 
 /* .row .cell:nth-child(2) {
