@@ -2,7 +2,7 @@
 .bundle
 .jekyll-cache
 .sass-cache
-Gemfile.lock
-# _site
+Gemfile.lock_
+site
 # mac
 .DS_Store
