@@ -13,8 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: minimal-categorized
-tagline: A site showing the usage of Jekyll custom theme
+title:
+tagline: A personal website developed by Gordon Lu
 email: email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This website was created as a demonstration for Jekyll custom theme
