@@ -2,38 +2,6 @@
 <html>
   <head>
     
-      <script>
-        (function() {
-    const consentPropName = "cookies_consent";
-    const storageType = localStorage;
-
-    shouldShowCookieConsent = () => !storageType.getItem(consentPropName);
-    acceptCookieConsent = () => storageType.setItem(consentPropName, true);
-    window.addEventListener("load", () => {
-        if(!shouldShowCookieConsent()) {
-            return;
-        }
-        const cookieContainer = document.createElement("div");
-        cookieContainer.classList.add("hidden");
-        const cookieParagraph = document.createElement("p");
-        const cookieContent = document.createTextNode("This site might be using cookies! Customize your message or disable cookies in metaData.yml!");
-        const cookieAgreeButton = document.createElement("button");
-        const cookieButtonContent = document.createTextNode("Agree");
-        cookieAgreeButton.appendChild(cookieButtonContent);
-        cookieAgreeButton.onclick = () => {
-            acceptCookieConsent();
-            cookieContainer.classList.add("hidden");
-            window.setTimeout(cookieContainer.remove.bind(cookieContainer), 1000);
-        }
-        cookieParagraph.append(cookieContent);
-        cookieContainer.append(cookieParagraph, cookieAgreeButton);
-        cookieContainer.classList.add("cookie-container")
-        document.body.appendChild(cookieContainer);
-        window.setTimeout(() => cookieContainer.classList.remove("hidden"));
-    });
-})();
-      </script>
-    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/minimal-categorized/assets/styles/styles.css">
@@ -93,26 +61,26 @@
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-1.html" category="category-1" title="Teaching">
-                        <i class="fas fa-cogs"> </i>
+                    <a href="/minimal-categorized/teaching.html" category="Teaching" title="Teaching">
+                        <i class="fas fa-chalkboard-teacher"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-2.html" category="category-2" title="Resume">
-                        <i class="fas fa-dice"> </i>
+                    <a href="/minimal-categorized/experience.html" category="Experience" title="Teaching Experience">
+                        <i class="fas fa-laptop"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-3.html" category="category-3" title="Tutoring">
-                        <i class="fas fa-dice"> </i>
+                    <a href="/minimal-categorized/resume.html" category="Resume" title="Resume">
+                        <i class="fas fa-book"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/about.html" category="about" title="About">
-                        <i class="fas fa-address-card"> </i>
+                    <a href="/minimal-categorized/tutoring.html" category="Tutoring" title="Tutoring">
+                        <i class="fas fa-hands-helping"> </i>
                     </a>
                 </li>
                 

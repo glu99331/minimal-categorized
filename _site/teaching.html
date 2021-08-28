@@ -2,38 +2,6 @@
 <html>
   <head>
     
-      <script>
-        (function() {
-    const consentPropName = "cookies_consent";
-    const storageType = localStorage;
-
-    shouldShowCookieConsent = () => !storageType.getItem(consentPropName);
-    acceptCookieConsent = () => storageType.setItem(consentPropName, true);
-    window.addEventListener("load", () => {
-        if(!shouldShowCookieConsent()) {
-            return;
-        }
-        const cookieContainer = document.createElement("div");
-        cookieContainer.classList.add("hidden");
-        const cookieParagraph = document.createElement("p");
-        const cookieContent = document.createTextNode("This site might be using cookies! Customize your message or disable cookies in metaData.yml!");
-        const cookieAgreeButton = document.createElement("button");
-        const cookieButtonContent = document.createTextNode("Agree");
-        cookieAgreeButton.appendChild(cookieButtonContent);
-        cookieAgreeButton.onclick = () => {
-            acceptCookieConsent();
-            cookieContainer.classList.add("hidden");
-            window.setTimeout(cookieContainer.remove.bind(cookieContainer), 1000);
-        }
-        cookieParagraph.append(cookieContent);
-        cookieContainer.append(cookieParagraph, cookieAgreeButton);
-        cookieContainer.classList.add("cookie-container")
-        document.body.appendChild(cookieContainer);
-        window.setTimeout(() => cookieContainer.classList.remove("hidden"));
-    });
-})();
-      </script>
-    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="/minimal-categorized/assets/styles/styles.css">
@@ -63,15 +31,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This website was created as a demonstration for Jekyll custom theme named minimal-categorized. Its main feature is to aggregate posts into categories, witch are easily distinguishable" />
 <meta property="og:description" content="This website was created as a demonstration for Jekyll custom theme named minimal-categorized. Its main feature is to aggregate posts into categories, witch are easily distinguishable" />
-<link rel="canonical" href="http://localhost:4000/minimal-categorized/category-1.html" />
-<meta property="og:url" content="http://localhost:4000/minimal-categorized/category-1.html" />
+<link rel="canonical" href="http://localhost:4000/minimal-categorized/teaching.html" />
+<meta property="og:url" content="http://localhost:4000/minimal-categorized/teaching.html" />
 <meta property="og:site_name" content="minimal-categorized" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Teaching" />
 <meta name="twitter:site" content="@itsmeaga1n" />
 <meta name="twitter:creator" content="@itsmeaga1n" />
 <script type="application/ld+json">
-{"author":{"@type":"Person","name":"itsmeaga1n"},"@type":"WebPage","url":"http://localhost:4000/minimal-categorized/category-1.html","description":"This website was created as a demonstration for Jekyll custom theme named minimal-categorized. Its main feature is to aggregate posts into categories, witch are easily distinguishable","headline":"Teaching","@context":"https://schema.org"}</script>
+{"author":{"@type":"Person","name":"itsmeaga1n"},"@type":"WebPage","url":"http://localhost:4000/minimal-categorized/teaching.html","description":"This website was created as a demonstration for Jekyll custom theme named minimal-categorized. Its main feature is to aggregate posts into categories, witch are easily distinguishable","headline":"Teaching","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -91,26 +59,26 @@
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-1.html" category="category-1" title="Teaching">
-                        <i class="fas fa-cogs"> </i>
+                    <a href="/minimal-categorized/teaching.html" category="Teaching" title="Teaching">
+                        <i class="fas fa-chalkboard-teacher"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-2.html" category="category-2" title="Resume">
-                        <i class="fas fa-dice"> </i>
+                    <a href="/minimal-categorized/experience.html" category="Experience" title="Teaching Experience">
+                        <i class="fas fa-laptop"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/category-3.html" category="category-3" title="Tutoring">
-                        <i class="fas fa-dice"> </i>
+                    <a href="/minimal-categorized/resume.html" category="Resume" title="Resume">
+                        <i class="fas fa-book"> </i>
                     </a>
                 </li>
                 
                 <li>
-                    <a href="/minimal-categorized/about.html" category="about" title="About">
-                        <i class="fas fa-address-card"> </i>
+                    <a href="/minimal-categorized/tutoring.html" category="Tutoring" title="Tutoring">
+                        <i class="fas fa-hands-helping"> </i>
                     </a>
                 </li>
                 
@@ -140,7 +108,7 @@
         window.addEventListener("load", () => {
             const navigation = document.getElementsByClassName("navigation")[0];
             const selectedCategory = navigation.getElementsByTagName("a");
-            const currCategory = "category-1";
+            const currCategory = "Teaching";
             
             for(menuItem of selectedCategory) {
                 if(menuItem.getAttribute("category") === currCategory) {
@@ -152,7 +120,7 @@
     })();
 </script>
       <main class="content-layout">
-          <div class="content-container category-aggregator category-1">
+          <div class="content-container category-aggregator Teaching">
     <h1>Teaching</h1>
     <p>Below you can find a schedule of courses that I am currently a Teaching Assistant for. Additionally, you may find information about courses that I have been a Teaching Assistant for in the past.</p>
     <hr>
@@ -283,93 +251,9 @@
     <!-- <hr class="content-separator">
     
         
-            <article>
-                <header>
-                    <h2>
-                        
-                        <a href="/minimal-categorized/category-1/2020/11/22/example-2.html">
-                        
-                            <i class="fas fa-angle-right"></i>
-                            Example post 2
-                        </a>
-                    </h2>
-                    <p class="article-date">2020-11-22</p>
-                </header>
-                <section>
-                    <p>
-                        This is summary of a post. It will appear in the page of it's category with the summary shown. Clicking each of them will redirect to the page of the post.
-                    </p>
-                </section>
-                <span class="article-read">
-                    
-                    <a href="/minimal-categorized/category-1/2020/11/22/example-2.html">
-                                            
-                        Read more &rarr;
-                        
-                    </a>
-                </span>
-                <hr>
-            </article>
-        
     
         
-            <article>
-                <header>
-                    <h2>
-                        
-                        <a href="https://soundcloud.com/back-from-void" target="_blank">
-                        
-                            <i class="fas fa-angle-right"></i>
-                            Example of external post
-                        </a>
-                    </h2>
-                    <p class="article-date">2020-11-01</p>
-                </header>
-                <section>
-                    <p>
-                        This is summary of a post, that has it's own external_url property. It will appear in the page of it's category with the summary shown. Clicking each of them will redirect to the external url.
-                    </p>
-                </section>
-                <span class="article-read">
-                    
-                    <a href="https://soundcloud.com/back-from-void" target="_blank">
-                                            
-                        Read more on authors SoundCould &rarr;
-                        
-                    </a>
-                </span>
-                <hr>
-            </article>
-        
     
-        
-            <article>
-                <header>
-                    <h2>
-                        
-                        <a href="/minimal-categorized/category-1/2020/09/11/example-1.html">
-                        
-                            <i class="fas fa-angle-right"></i>
-                            Example post 1
-                        </a>
-                    </h2>
-                    <p class="article-date">2020-09-11</p>
-                </header>
-                <section>
-                    <p>
-                        This is summary of a post. It will appear in the page of it's category with the summary shown. Clicking each of them will redirect to the page of the post, the same with clicking "Read More"
-                    </p>
-                </section>
-                <span class="article-read">
-                    
-                    <a href="/minimal-categorized/category-1/2020/09/11/example-1.html">
-                                            
-                        Read more &rarr;
-                        
-                    </a>
-                </span>
-                <hr>
-            </article>
         
      -->
 </div>

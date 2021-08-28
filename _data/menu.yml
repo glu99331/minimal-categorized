@@ -13,41 +13,41 @@ menu_pages:
   category: home
 
 - title: Teaching
-  url: /category-1.html
+  url: /teaching.html
   show_on_home: True
   image_url: assets/img/teaching.png
-  icon_name: fas fa-cogs
-  category: category-1
+  icon_name: fas fa-chalkboard-teacher
+  category: Teaching
   tooltip: Teaching
   description: To view recitation material, as well as courses I am currently a UTA for, click the above image.
 
+- title: Teaching Experience
+  url: /experience.html
+  show_on_home: False
+  icon_name: fas fa-laptop
+  category: Experience
+  tooltip: Teaching Experience
+  description:
+
 - title: Resume
-  url: /category-2.html
+  url: /resume.html
   show_on_home: True
   image_url: assets/img/resume.jpg
-  icon_name: fas fa-dice
-  category: category-2
+  icon_name: fas fa-book
+  category: Resume
   tooltip: Resume
   description: Learn more about my work experience, projects, and coursework by clicking on the above image.
 
-- title: Tutoring
-  url: /category-3.html
+- title: Private Tutoring
+  url: tutoring.html
   show_on_home: True
   image_url: assets/img/tutor.png
-  icon_name: fas fa-dice
-  category: category-3
-  tooltip: Tutoring
+  icon_name: fas fa-hands-helping
+  category: Tutoring
+  tooltip: Tutoring 
   description: Learn more about what courses I offer private tutoring in by clicking the above image.
-  
 
 
-    
-- title: Contact
-  url: about.html
-  show_on_home: False
-  icon_name: fas fa-address-card
-  category: about
-  tooltip: About 
 
 menu_contacts:
 - faicon: fab fa-github-alt
